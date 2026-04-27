@@ -1,0 +1,72 @@
+---
+title: "Discussion 11: Analyze a Commercial Recommender"
+author: "Emily El Mouaquite"
+format: html
+editor: visual
+---
+
+## Analyzing a Commercial Recommender: Depop
+
+The following discussion response analyzes the recommender system utilized by Depop. Depop is a social marketplace for buying and selling secondhand fashion. This analysis applies a scenario design framework in order to draw conclusions about how Depop's recommender system operates.
+
+## Scenario Design Analysis
+
+### Who are Depop's target users?
+
+Depop has two types of target users:
+
+-   **Buyers**: Those looking to purchase secondhand clothing.
+
+-   **Sellers**: Users that are trying to sell their secondhand clothing.
+
+It is also important to note that many Depop users are both buyers and sellers. Some conclusions that can be drawn about Depop users may be that they are environmentally conscious as well as economical. This can be seen in how the platform emphasizes circular fashion. They are either trying to make money selling, save money by shopping secondhand, or both. Additionally, Depop users might be categorized as primarily individuals who have high levels of social media literacy, and knowledge of fashion trends. Many users seem to be interested in using the platform not just to shop, but to curate a personal aesthetic. The overlap between buyers and sellers also suggests that users are both consumers and entrepreneurs who are participating in a marketplace where they are buying from, and selling to, their peers.
+
+### What are their key goals?
+
+**Buyers:**
+
+-   Find clothing and/or accessories that match their personal style, size and budget needs.
+
+-   Gain outfit and aesthetic inspiration.
+
+-   Some may be searching for unique, rare or exclusive items that can only be purchased secondhand.
+
+**Sellers:**
+
+-   Sell their items efficiently.
+
+-   Reach the right audience for their items (style/ size)
+
+-   Build a following.
+
+### How can Depop's recommender system help them accomplish those goals?
+
+To accomplish both buyer and seller goals, the recommender system utilized by Depop should be built around the concept of recommending similar buyers to relevant sellers to help them efficiently discover items that match their style needs and/ or connect with the right audience. The system should support this by curating personalized feeds, suggesting sellers to follow, and showcasing related items.
+
+## Reverse Engineering Depop for More Information
+
+Having been both a buyer and seller on Depop myself, I am familiar with the way that the recommender system works on both ends. It seems to combine collaborative filtering and content-based filtering using item metadata and user interaction data. Engagement signals such as likes, clicks, and follows appear to play a significant role in ranking content on the buyer end.
+
+In addition to these signals, the platform suggests buyers items that align with their recent activity (e.g searches and purchases). This suggests that recommendations are continuously updated based on short term preferences as well as long term behavior. For example, interacting with a specific style or brand usually results in similar items appearing more frequently in the “Suggested For You” feed.
+
+Depop also collects buyer preference information based on the categories that they interact with. There are shop by price and style selections, as well as personal size and category (men, women, kids) selections that can be made when a buyer is conducting a search, and when first signing up for an account.
+
+On the seller side, Depop seems to rely on image-based similarity models. When posting a listing, it gives the user examples of similar items that have recently sold, and includes the price that it sold for. An item's individual visibility itself seems to be influenced by how well a listing matches current user demand. Depop utilizes hashtags to categorize items to make them more easily discoverable, which allows for the system to connect listings with users that are engaging with similar styles. These, along with item descriptions, which include information like the size, help the platform interpret the aesthetic and category of each listing so that it can be recommended to the correct buyers.
+
+Interestingly, Depop gives sellers the option to "boost" their listings in exchange for a higher cut from their earnings if the item is sold. This is noteworthy because it means promoted listings may receive increased visibility regardless of whether they are relevant to a specific user. It shows that there is also a monetization aspect to the recommender system.
+
+Overall, these observations of Depop as a platform suggest that the recommender system is mostly driven by user engagement. Buyer behavior seems to be the driving force behind what individual buyers see, and which sellers gain exposure,
+
+## Recommendations for Improvement
+
+Some recommendations for improvement of the Depop recommender system include:
+
+-   Giving more transparency in recommending items. This could mean something telling a user that they are being shown an item because they liked another certain item, similar to the way that the platform already gives sellers information about items similar to theirs that have already sold.
+
+-   Reducing bias for items that already have a lot of likes, or items from sellers that have a lot of followers, and giving more visibility to items with fewer likes and interactions.
+
+-   Speaking from my own personal buying experience, more variety in the "Suggested For You" section would make the recommended feed less repetitive, and might broaden a user's style discovery.
+
+-   Allowing users to actively indicate dislikes or hide irrelevant items would give the recommender system clear signals.
+
+-   Giving sellers insight into why their items are not being recommended. However, this would negatively affect the amount of seller usage of the "boost" feature, which would, in turn, reduce company earnings.
